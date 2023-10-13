@@ -18,5 +18,63 @@ html {
 }
 
 body {
+  background-color: lavender;
   margin-bottom: 60px;
 }
+.movies1 {
+    position: relative;
+    left: 0px;
+    right: 20px;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.movies1::-webkit-scrollbar {
+        width: auto;
+    }
+
+.movies2 {
+    position: relative;
+    right: 20px;
+    left: 0px;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.movies2::-webkit-scrollbar {
+        width: auto;
+}
+
+.movies3 {
+    position: relative;
+    right: 20px;
+    left: 0px;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.movies3::-webkit-scrollbar {
+        width: auto;
+    }
+.movies-navbar {
+    left: 0;
+    width: 6000px;
+}
+
+.movies-nav {
+    width: 250px;
+    display: block;
+    margin: 0 10px 0 0;
+    text-align: center;
+    color: black;
+}
+
