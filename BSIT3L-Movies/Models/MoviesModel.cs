@@ -10,7 +10,7 @@ namespace BSIT3L_Movies.Models
         public int ReleaseYear { get; set; }
         public string Genre { get; set; }
 		public string Cover { get; set; }
-		//public string Link { get; set; }//
+		public string Link { get; set; }
 
 	}
 }

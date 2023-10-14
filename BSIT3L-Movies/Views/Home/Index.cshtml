@@ -31,36 +31,38 @@
 </table>*@
 
 
-<h1>MOVIES</h1>
+<h1>ALL MOVIES</h1>
 <div class="movies1">
 @foreach (var movie in Model)
 {
     <div class="movies-navbar">
-        <div class="movies-nav"><a href="/movies/getmovie/@movie.Id"><img src="@Url.Content(movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
-        <div class="movies-nav"><a href="/movies/getmovie/@movie.Id"> @movie.Name </a></div>
-        <div class="movies-nav"><a> @movie.Genre </a></div>
+        <div class="moviesnav"><a href="/movies/getmovie/@movie.Id"><img src="@Url.Content(movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
+        <div class="moviesnav"><a href="/movies/getmovie/@movie.Id"> @movie.Name </a></div>
+        <div class="moviesnav"><a> @movie.Genre </a></div>
     </div>
 }
 </div>
 
+<h1>DRAMA</h1>
 <div class="movies2">
-    @foreach (var _movie in Model.Where(m => m.Id > 5))
+    @foreach (var _movie in Model.Where(m => m.Genre == "Drama"))
     {
         <div class="movies-navbar">
-            <div class="movies-nav"><a href="/movies/getmovie/@_movie.Id"><img src="@Url.Content(_movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
-            <div class="movies-nav"><a href="/movies/getmovie/@_movie.Id"> @_movie.Name </a></div>
-            <div class="movies-nav"><a> @_movie.Genre </a></div>
+            <div class="moviesnav"><a href="/movies/getmovie/@_movie.Id"><img src="@Url.Content(_movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
+            <div class="moviesnav"><a href="/movies/getmovie/@_movie.Id"> @_movie.Name </a></div>
+            <div class="moviesnav"><a> @_movie.Genre </a></div>
         </div>
     }
 </div>
 
+<h1>YOU MIGHT LIKE</h1>
 <div class="movies3">
-    @foreach (var _movie in Model.Where(m => m.Id > 10))
+    @foreach (var _movie in Model.Where(m => m.ReleaseYear > 2015))
     {
         <div class="movies-navbar">
-            <div class="movies-nav"><a href="/movies/getmovie/@_movie.Id"><img src="@Url.Content(_movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
-            <div class="movies-nav"><a href="/movies/getmovie/@_movie.Id"> @_movie.Name </a></div>
-            <div class="movies-nav"><a> @_movie.Genre </a></div>
+            <div class="moviesnav"><a href="/movies/getmovie/@_movie.Id"><img src="@Url.Content(_movie.Cover)" alt="Product Image" width="250" height="300" /></a></div>
+            <div class="moviesnav"><a href="/movies/getmovie/@_movie.Id"> @_movie.Name </a></div>
+            <div class="moviesnav"><a> @_movie.Genre </a></div>
         </div>
     }
 </div>

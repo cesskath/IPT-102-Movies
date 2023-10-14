@@ -13,12 +13,15 @@
     <p>Rating: @Model.Rating</p>
     <p>Release Year: @Model.ReleaseYear</p>
     <p>Genre: @Model.Genre</p>
-    @*<p>Cover: @Model.Cover</p>*@
     @*<p>Link: @Model.Link</p>*@
+    @*<p>Cover: @Model.Cover</p>*@
+    
 
     
     <div class="Cover"><img src="@Url.Content(Model.Cover)" alt="Product Image" width="250" height="300"/></div>
-
+    <div class="moviebg">
+        <center> <iframe width="1000" height="680" src="@Model.Link"></iframe> </center>
+    </div>
    
 </body>
 </html>

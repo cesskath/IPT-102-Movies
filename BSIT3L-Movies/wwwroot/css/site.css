@@ -18,8 +18,12 @@ html {
 }
 
 body {
-  background-color: lavender;
+  background-color: ghostwhite;
   margin-bottom: 60px;
+}
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
 }
 .movies1 {
     position: relative;
@@ -70,11 +74,13 @@ body {
     width: 6000px;
 }
 
-.movies-nav {
+.moviesnav {
     width: 250px;
     display: block;
     margin: 0 10px 0 0;
     text-align: center;
     color: black;
 }
-
+.moviebg {
+    margin-top:50px;
+}
